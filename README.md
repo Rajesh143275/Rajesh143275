@@ -80,7 +80,7 @@ print('.............................................');
 p<-data$Physics
 c<-data$Chemistry
 m<-data$Maths
-d<-data$Biology
+b<-data$Biology
 mp<-mean (p)
 print(paste('Mean of Physics marks:',mp))
 mdc<-median(c)
@@ -92,7 +92,7 @@ x<-as.numeric(x)
 y<-as.numeric(B)
 z<-rbind(x,y)
 max_val<-max(y)
-d<-dia(z)
+d<-dim(z)
 print('Mode of Biology marks: ')
 for ( i in 1:d[2]){
 if(z[2,i] ==max_val)
