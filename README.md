@@ -51,8 +51,8 @@ max_val<-max(y)
 d<-dim(z)
 print('Mode: ')
 for (i in 1:d[2]) {
-if(z[2,1]max_val)
-print(paste(z[1,1]))
+if(z[2,i]==max_val)
+print(paste(z[1,i]))
 }
 #range
 x<-range (A)
