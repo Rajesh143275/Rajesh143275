@@ -187,9 +187,9 @@ print('Contigency Table')
 print('--................')
 print(data)
 print('---------')
-cl<-data Recover
+c1<-data$Recover
 c2<-data$Do_Not_Recover
-m<-as.table (cbind(c1.c2))
+m<-as.table(cbind(c1,c2))
 print('without Yates Correction :')
 x<-chisq.test(m,correct=FALSE)
 print(x)
@@ -210,7 +210,7 @@ ans=dbinom(x,n,p)
 print(paste ("P[X=2]=", round(ans,4)))
 print('-...................');
 print('Example 2 : Binomial Distribution')
-print c("n=6 p=0.5 , P[X>=4]=? ")
+print c("n=6,p=0.5 , P[X>=4]=? ")
 n=6
 D=0.5
 x=3
@@ -218,7 +218,7 @@ ans=1-pbinom(x,n,p)
 print (paste('P[X>=4]=', round(ans,4)))
 print('....................');
 print('Example 3 : Binomial Distribution')
-print "n=5 p=0.4 , P[X<=2]=? ')
+print ("n=5,p=0.4 , P[X<=2]=? ')
 n=5
 D=0.4
 x=2
