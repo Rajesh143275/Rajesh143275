@@ -72,7 +72,7 @@ hist (A)
 Practical 4:-
 
 Q)TO execute statistical functions on the data imported from .CSV file
-cat("\014')
+cat("\014")
 data<-read.csv("result.csv")
 print('..............................');
 print(data)
