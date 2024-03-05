@@ -218,7 +218,7 @@ ans=1-pbinom(x,n,p)
 print (paste('P[X>=4]=', round(ans,4)))
 print('....................');
 print('Example 3 : Binomial Distribution')
-print ("n=5,p=0.4 , P[X<=2]=? ')
+print ("n=5,p=0.4 , P[X<=2]=? ")
 n=5
 D=0.4
 x=2
