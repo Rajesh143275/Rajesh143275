@@ -33,7 +33,7 @@ Q)claculate mean, median,mode of the given data set
 cat("\014")
 print('Data Set: 34,47,1,1,57,24,34,19,19,50,28,1,34')
 A<-c(34,47,1,1,57,24,34,19,19,50,28,1,34)
-xmean<-(A)
+x<-mean(A)
 print('Mean=')
 print(x)
 #median
