@@ -118,12 +118,12 @@ print(x)
 nr<-sum((x-mean(x))^2)
 dr<-(length(x)-1)
 sd_x<-sqrt(nr/dr)
-print(paste("Standard Deviation of the given data set is: ".round((sd_x),4)))
+print(paste("Standard Deviation of the given data set is: ",round((sd_x),4)))
 print("-..................");
 #Variance
-nr<-sum((x-sean(x))^2)
+nr<-sum((x-mean(x))^2)
 dr<-(length(x)-1)
-var x<-nr/dr
+var_x<-nr/dr
 print(paste("Variance of the given data set is: ",round((var_x),4)))
 print("........................")
 #Covariance
@@ -141,8 +141,8 @@ print(data)
 print('.....................');
 ql<-data$QUIZ1
 q2<-data$QUIZ2
-sdc<-sd(gl) print (paste('standard deviation of Quiz-I marks, round(sdc,4)))
-sdc<-sd(q2) print (paste('Standard Deviation of Quiz-2 marks, round(sdc,4)))
+sdc<-sd(gl) print (paste('standard deviation of Quiz-I marks', round(sdc,4)))
+sdc<-sd(q2) print (paste('Standard Deviation of Quiz-2 marks', round(sdc,4)))
 var a<-var (q1)
 print (paste("Variance of Quiz1 marks:", round (vara, 4)))
 var b<-var (q2)
