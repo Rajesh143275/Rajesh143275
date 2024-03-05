@@ -84,7 +84,7 @@ d<-data$Biology
 mp<-mean (p)
 print(paste('Mean of Physics marks:',mp))
 mdc<-median(c)
-print(paste("Median of Chemistry marks:,mdc))
+print(paste("Median of Chemistry marks:",mdc))
 #Mode of Biology sarks
 B<-table(b)
 x<-names (B)
