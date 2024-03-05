@@ -210,7 +210,7 @@ ans=dbinom(x,n,p)
 print(paste ("P[X=2]=", round(ans,4)))
 print('-...................');
 print('Example 2 : Binomial Distribution')
-print c("n=6,p=0.5 , P[X>=4]=? ")
+print ("n=6,p=0.5 , P[X>=4]=? ")
 n=6
 D=0.5
 x=3
