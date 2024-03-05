@@ -23,9 +23,9 @@ dimnames (A) <- list(c("FYCS-1", "FYCS-2"), C("BOYS", "GIRLS"))
 print(A)
 Q5)Create the following dataset
 Roll<-c(9001,9002,9003,9004,9006,9007,9009,9010)
-gpa-c(6.9,0,9.3,0,0,0,8,7.8)
+gpa<-c(6.9,0,9.3,0,0,0,8,7.8)
 grade<-c("B", "F", "A+", "F","F","F","A", "B+")
-x-data.frame(roll,gpa, grade)
+x<-data.frame(Roll,gpa, grade)
 print(x)
 
 Practical 3:-
