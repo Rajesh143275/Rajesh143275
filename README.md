@@ -93,7 +93,7 @@ y<-as.numeric(B)
 z<-rbind(x,y)
 max_val<-max(y)
 d<-dia(z)
-print('Mode of Biology marks: ")
+print('Mode of Biology marks: ')
 for ( i in 1:d[2]){
 if(z[2,i] ==max_val)
 print(paste (z[1,i]))
@@ -106,8 +106,8 @@ rm<-range(m)
 print(rm)
 iqrc<-IQR(c)
 print(paste('Interquartile range of Chemistry marks: ', iqrc))
-Biology Marks-b
-hist (Biology Marks)
+Biology_Marks=b
+hist (Biology_Marks)
 
 Practical 5:-
 cat("\014")
