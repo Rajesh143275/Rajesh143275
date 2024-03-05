@@ -139,13 +139,15 @@ data<-read.csv("result.csv")
 print('........................');
 print(data)
 print('.....................');
-ql<-data$QUIZ1
+q1<-data$QUIZ1
 q2<-data$QUIZ2
-sdc<-sd(gl) print (paste('standard deviation of Quiz-I marks', round(sdc,4)))
-sdc<-sd(q2) print (paste('Standard Deviation of Quiz-2 marks', round(sdc,4)))
-var a<-var (q1)
+sdc<-sd(gl) 
+print (paste('standard deviation of Quiz-I marks', round(sdc,4)))
+sdc<-sd(q2)
+print (paste('Standard Deviation of Quiz-2 marks', round(sdc,4)))
+var_a<-var (q1)
 print (paste("Variance of Quiz1 marks:", round (vara, 4)))
-var b<-var (q2)
+var_b<-var (q2)
 print (paste("Variance of Quiz2 marks: ", round (varb,4)))
 covpm<-cov(q1,q2) 
 print (paste("Covariance of Quiz-1 and Quiz-2 marks:", round(covpm,4)))
