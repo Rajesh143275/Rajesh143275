@@ -141,7 +141,7 @@ print(data)
 print('.....................');
 q1<-data$QUIZ1
 q2<-data$QUIZ2
-sdc<-sd(gl) 
+sdc<-sd(ql) 
 print (paste('standard deviation of Quiz-I marks', round(sdc,4)))
 sdc<-sd(q2)
 print (paste('Standard Deviation of Quiz-2 marks', round(sdc,4)))
