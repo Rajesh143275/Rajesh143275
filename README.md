@@ -282,3 +282,29 @@ System.out.println("Invalid Number");
 }
 
 
+Q4)SWINGGS
+A)write a java program to create a frame using inheritance in swing
+import javax.swing.JFrame;
+public class GridLayout extends JFrame {
+GridLayout() {
+setSize(400,600);
+setLayout(null);
+setVisible(true);
+}
+public static void main(String[] args) {
+GridLayout obj=new GridLayout();
+}
+}
+B)write a java program to create a frame using Association in swing
+import javax.swing.JFrame;
+public class GridLayout {
+GridLayout () {
+JFrame f=new JFrame();
+f.setSize(400,600);
+f.setLayout(null);
+f.setVisible(true);
+}
+public static void main(String[] args) {
+GridLayout obj=new GridLayout();
+}
+}
