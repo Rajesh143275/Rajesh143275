@@ -392,3 +392,35 @@ public class BLayout extends JFrame{
 
 Q6)Events
 A)write a java program to demonstrate the ActionEvent and take the name from uuser and display the messagge
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+public class Events extends JFrame implements ActionListener{
+JLabel l1,l2;
+JTextField t1;
+JButton b1;
+Events(){
+    l1=new JLabel("Name");
+    t1=new JTextField();
+    b1=new JButton("Display");
+    l2=new JLabel();
+    b1.addActionListener(this);
+    add (l1);
+    add (t1);
+    add (b1);
+    add (l2);
+    setSize (300,300);
+    setLayout (new GridLayout (2,2));
+    setVisible(true);
+}
+    public static void main(String[] args) {
+        Events obj=new Events();
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String n=t1.getText();
+        l2.setText("Welcome "+n);
+    }
+}
+6B)
