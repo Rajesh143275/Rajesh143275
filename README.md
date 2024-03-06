@@ -71,7 +71,7 @@ a.add(10,20);
 a.add(50,60.5F);
 }
 }
-#STATIC
+C)STATIC
 public class Number {
 static void greatest() {
 int x=10;
@@ -86,5 +86,116 @@ return;
 }
 public static void main(String[] args) {
 Number.greatest();
+}
+}
+
+
+Q2)Write a program to implement the concept of Inheritance and method overriding
+#INHERITANCE
+class Employee {
+float salary=40000;
+}
+public class Programmer extends Employee {
+int bonus=10000;
+public static void main(String[] args) {
+Programmer p = new Programmer();
+System.out.println("Programmer salary is: "+p.salary);
+System.out.println("Bonus of Programmer is: "+p.bonus);
+}
+}
+#SINGLE INHERITANCE
+class Animal {
+void eat () {
+System.out.println("Eating.....");
+}
+}
+Class Dog extends Animal {
+void bark() {
+System.out.println("Barking........ ");
+}
+}
+public class Test inheritance {
+public static void main(String[] args) {
+Dog d=new Dog();
+d.bark();
+d.eat();
+}
+}
+#MULTIPLE INHERITANCE
+class Animal {
+void eat (){
+System.out.println("Eating.......");
+}
+}
+class Dog extends Animal{
+void bark() {
+System.out.println("Barking......");
+}
+}
+class BabyDog extends Dog{
+void weep(){
+System.out.println("Weeping......");
+}
+}
+public class Testinheritance2 {
+public static void main(String[] args) {
+BabyDog d=new BabyDog();
+d. weep();
+d.bark();
+d.eat();
+}
+}
+#HIERARCHIAL INHERITANCE
+class Animal {
+void eat () {
+System.out.println("Eating...");
+}
+}
+class Dog extends Animal {
+void bark() {
+System.out.println("Barking...");
+}
+}
+class Cat extends Animal {
+void meow() {
+System.out.println("Meowing......");
+}
+}
+public class Testinheritance3 {
+public static void main(String[] args) {
+Cat c=new Cat();
+c.meow();
+c.eat();
+}
+}
+B)METHOD OVERRIDING
+class Bank{
+int getRateOfInterest () {
+return 0;
+}
+}
+class SBI extends Bank{
+int getRateOfInterest () {
+return 8;
+}
+}
+class ICICI extends Bank{
+int getRateOfInterest () {
+return 7;
+}
+}
+class AXIS extends Bank{
+int getRateOfInterest () {
+return 9;
+}
+}
+public class Test2 {
+public static void main(String[] args) {
+SBI s=new SBI();
+ICICI i=new ICICI();
+AXIS a=new AXIS();
+System.out.println("SBI Rate Of Interest: "+s.getRateOfInterest());
+System.out.println("ICICI Rate Of Interest: "+i.getRateOfInterest());
+System.out.println("AXIS Rate of Interest: "+a.getRateOfInterest());
 }
 }
