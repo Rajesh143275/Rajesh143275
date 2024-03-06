@@ -1,4 +1,4 @@
-Q1)Write a program to create a clss and implement default,overloaded,copy constuctor
+Q1)Write a program to create a class and implement default,overloaded,copy constuctor
 A)
 #DEFAULT 
 public class Bike {
@@ -50,7 +50,7 @@ s2.display();
 }
 }
 B)OVERLOADING
-public class Addition (
+public class Addition {
 void add(){
 System.out.println("Zero parameter");
 }
@@ -199,3 +199,8 @@ System.out.println("ICICI Rate Of Interest: "+i.getRateOfInterest());
 System.out.println("AXIS Rate of Interest: "+a.getRateOfInterest());
 }
 }
+
+
+Q3)
+A)Write a program to raise built-in exception and raise them as per the
+requirements.
