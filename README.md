@@ -308,3 +308,34 @@ public static void main(String[] args) {
 GridLayout obj=new GridLayout();
 }
 }
+
+
+Q5) LAYOUTS
+A)GRID LAYOUT
+mport java.awt.GridLayout;
+import javax.swing.*;
+public class A extends JFrame{
+    JLabel l1,l2;
+    JTextField t1;
+    JButton b1;
+    A()
+    {
+        l1=new JLabel("Name");
+        l2=new JLabel();
+        t1=new JTextField();
+        b1=new JButton("Submit");
+        add(l1);
+        add(t1);
+        add(l2);
+        add(b1);
+        setSize(400,600);
+        setLayout (new GridLayout (2,2));
+        setVisible(true);
+}
+    public static void main(String[] args) {
+        A obj=new A();
+    }
+    
+}
+
+
