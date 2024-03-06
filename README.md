@@ -460,6 +460,7 @@ Events(){
        int c=a+b;
        t3.setText(" "+c);
     }
+}
 
 
 Q7)Demonstrate the use of Anonymous inner class in Event Handling
@@ -496,7 +497,7 @@ Events(){
         Events obj=new Events();
     }
 }
-}
+
 
     
 
