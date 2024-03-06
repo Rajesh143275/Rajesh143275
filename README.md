@@ -423,4 +423,80 @@ Events(){
         l2.setText("Welcome "+n);
     }
 }
-6B)
+6B)write a java program to demonstrate the ActionEvent and take two numbers from users and display the addition
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+public class Events extends JFrame implements ActionListener{
+JLabel l1,l2;
+JTextField t1,t2,t3;
+JButton b1;
+Events(){
+    l1=new JLabel("Number1");
+    l2=new JLabel("Number2");
+    b1=new JButton("Result");
+    t1=new JTextField();
+    t2=new JTextField();
+    t3=new JTextField();
+    b1.addActionListener(this);
+    add (l1);
+    add (t1);
+    add (l2);
+    add (t2);
+    add (b1);
+    add (t3);
+    setSize (300,300);
+    setLayout (new GridLayout (3,3));
+    setVisible(true);
+}
+    public static void main(String[] args) {
+        Events obj=new Events();
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+       int a=Integer.parseInt(t1.getText());
+       int b=Integer.parseInt(t2.getText());
+       int c=a+b;
+       t3.setText(" "+c);
+    }
+
+
+Q7)Demonstrate the use of Anonymous inner class in Event Handling
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+public class Events extends JFrame {
+JLabel l1,l2;
+JTextField t1;
+JButton b1;
+Events(){
+    l1=new JLabel("Name");
+    t1=new JTextField();
+    b1=new JButton("Display");
+    l2=new JLabel();
+    b1.addActionListener(new ActionListener()
+    {
+        @Override
+       public void actionPerformed(ActionEvent e) {
+        String n=t1.getText();
+        l2.setText("Welcome" +n);
+    }
+    });
+    add(l1);
+    add(t1);
+    add(b1);
+    add(l2);
+    setSize (300,300);
+    setLayout (new GridLayout(2,2));
+    setVisible(true);
+}
+    public static void main(String[] args) {
+        Events obj=new Events();
+    }
+}
+}
+
+    
+
