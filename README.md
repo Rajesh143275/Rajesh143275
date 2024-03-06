@@ -312,13 +312,13 @@ GridLayout obj=new GridLayout();
 
 Q5) LAYOUTS
 A)GRID LAYOUT
-mport java.awt.GridLayout;
+import java.awt.GridLayout;
 import javax.swing.*;
-public class A extends JFrame{
+public class GridLayout extends JFrame{
     JLabel l1,l2;
     JTextField t1;
     JButton b1;
-    A()
+    GridLayout()
     {
         l1=new JLabel("Name");
         l2=new JLabel();
@@ -333,9 +333,62 @@ public class A extends JFrame{
         setVisible(true);
 }
     public static void main(String[] args) {
-        A obj=new A();
+        GridLayout obj=new GridLayout();
+    }
+    
+}
+B)FLOW LAYOUT
+import java.awt.FlowLayout;
+import javax.swing.*;
+public class FlowLayout extends JFrame{
+    JLabel l1,l2;
+    JTextField t1;
+    JButton b1;
+    FlowLayout()
+    {
+        l1=new JLabel("Name");
+        l2=new JLabel();
+        t1=new JTextField();
+        b1=new JButton("Submit");
+        add(l1);
+        add(t1);
+        add(l2);
+        add(b1);
+        setSize(400,600);
+        setLayout (new FlowLayout());
+        setVisible(true);
+}
+    public static void main(String[] args) {
+        FlowLayout obj=new FlowLayout();
+    }
+    
+}
+C)BORDER LAYOUT
+import java.awt.BorderLayout;
+import javax.swing.*;
+public class BLayout extends JFrame{
+    JButton b1,b2,b3,b4,b5;
+    BLayout()
+    {
+        b1=new JButton("North");
+        b2=new JButton("South");
+        b3=new JButton("East");
+        b4=new JButton("West");
+        b5=new JButton("Center");
+        add(b1,BorderLayout.NORTH);
+        add(b2,BorderLayout.SOUTH);
+        add(b3,BorderLayout.EAST);
+        add(b4,BorderLayout.WEST);
+        add(b5,BorderLayout.CENTER);
+        setSize(400,600);
+        setVisible(true);
+    }
+    public static void main(String[] args) {
+        BLayout obj=new BLayout();
     }
     
 }
 
 
+Q6)Events
+A)write a java program to demonstrate the ActionEvent and take the name from uuser and display the messagge
