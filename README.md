@@ -340,11 +340,11 @@ public class GridLayout extends JFrame{
 B)FLOW LAYOUT
 import java.awt.FlowLayout;
 import javax.swing.*;
-public class FlowLayout extends JFrame{
+public class FlowLayout1 extends JFrame{
     JLabel l1,l2;
     JTextField t1;
     JButton b1;
-    FlowLayout()
+    FlowLayout1()
     {
         l1=new JLabel("Name");
         l2=new JLabel();
@@ -359,7 +359,7 @@ public class FlowLayout extends JFrame{
         setVisible(true);
 }
     public static void main(String[] args) {
-        FlowLayout obj=new FlowLayout();
+        FlowLayout1 obj=new FlowLayout1();
     }
     
 }
