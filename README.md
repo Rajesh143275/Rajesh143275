@@ -168,7 +168,7 @@ c.meow();
 c.eat();
 }
 }
-B)METHOD OVERRIDING
+#METHOD OVERRIDING
 class Bank{
 int getRateOfInterest () {
 return 0;
@@ -197,6 +197,40 @@ AXIS a=new AXIS();
 System.out.println("SBI Rate Of Interest: "+s.getRateOfInterest());
 System.out.println("ICICI Rate Of Interest: "+i.getRateOfInterest());
 System.out.println("AXIS Rate of Interest: "+a.getRateOfInterest());
+}
+}
+#B)Write a program to implement the concepts of Abstract classes and
+methods.
+abstract class Bike {
+abstract void run();
+}
+public class Honda4 extends Bike {
+void run() {
+System.out.println("running safely...");
+}
+public static void main(String[] args) {
+Bike obj=new Honda4();
+obj.run();
+}
+}
+#C)Write a program to implement the concept of Interfaces.
+interface Drawable {
+void draw();
+}
+class Rectangle implements Drawable {
+public void draw() {
+System.out.println("Drawing Rectangle");
+}
+}
+class Circle implements Drawable {
+public void draw() {
+System.out.println("Drawing Circle");
+}
+}
+public class Testinterfacel1{
+public static void main(String[] args) {
+Drawable d=new Circle();
+d.draw();
 }
 }
 
