@@ -1,0 +1,143 @@
+1)Breadboard and blinking of led
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+void loop()
+{
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+
+2)Program using light sensitive sensor
+int Sensor_value= 0;
+void setup()
+{
+  pinMode(A0, INPUT);
+  pinMode(9, OUTPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  Sensor_value = analogRead(A0);
+  Serial.print(Sensor_value);
+  analogWrite(9,map(Sensor_value,0,1023,255,0));
+  delay(1000); 
+}
+
+3)Program using temperature sensor
+char degree = 176; 
+const int sensor= A1;
+void setup()
+{
+  pinMode(sensor,INPUT);
+  Serial.begin(9600);
+}
+void loop()
+{
+  int tmp = analogRead(sensor);
+  float voltage = (tmp*5.0)/1024;
+  float tmpcell = (voltage -0.5)* 100.0;
+  Serial.print ("censius: \n");
+  Serial.print(tmpcell);
+  Serial.print(degree);
+  delay (1000); 
+}
+
+4)Humidity sensor
+const int analogIn = A0; 
+int humiditySensorOutput =0;
+void setup(){
+  Serial.begin(9600);
+}
+void loop(){
+  humiditySensorOutput = analogRead(analogIn);
+  int humidityPercentage = map(humiditySensorOutput,0,1023,10,70);
+  Serial.print("Humidity:");
+  Serial.print(humidityPercentage);
+  Serial.println("%");
+  delay(5000);  
+}
+
+5)Ultrasonic sensor
+const int trigPin=9;
+const int echoPin=10;
+long duration;
+int distance;
+void setup() {
+  pinMode(trigPin, OUTPUT); 
+  pinMode(echoPin, INPUT); 
+  Serial.begin(9600); 
+}
+void loop() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration * 0.034 / 2; 
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+}
+
+6)Digital infrared motion sensor
+int SensorState = 0;
+void setup()
+{
+  pinMode (2, INPUT);
+  pinMode (LED_BUILTIN, OUTPUT);
+}
+void loop()
+{
+  SensorState = digitalRead(2);
+  if (SensorState == HIGH)
+  {
+    digitalWrite (LED_BUILTIN, LOW);
+  }
+  delay (10);
+}
+
+7)Gas sensor
+
+8)Servo motor
+#include <Servo.h> 
+Servo servoBase;
+void setup()
+{
+    servoBase.attach (A1);
+    servoBase.write(0); 
+}
+void loop()
+{
+   for(int i=0; i<= 180;i+= 10) 
+   {
+     servoBase.write(i); 
+     delay(500);
+   }
+  
+}
+
+
+
+
+
+
+
+light sensor
+https://www.tinkercad.com/things/2Og3mCnZQSz-light-sensor
+temperature sensor :
+https://www.tinkercad.com/things/hSvycUvuRpq-temperature-sensor 
+humidity sensor :
+https://www.tinkercad.com/things/5QNVw72ysAe-humidity-sensor 
+ultrasonic sensor :
+https://www.tinkercad.com/things/bxXm0Jw0Tmx-ultrasonic-sensor 
+servo motors:
+https://www.tinkercad.com/things/jy4kuBEOV0r-servo-motors 
+digital infrared motion sensor:
+https://www.tinkercad.com/things/4yNapMUVpjN-motion-sensors 
+Gas Sensor:
+https://www.tinkercad.com/things/gV1k7w6SK46-gas-sensors
